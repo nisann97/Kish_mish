@@ -87,14 +87,113 @@
   text-decoration: none;
 }
 
-#navbar-area .account .btn-search {
-  border: 2px solid rgba(1, 15, 28, 0.1019607843) !important;
+#navbar-area .account .container{
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border: 2px solid rgba(1, 15, 28, 0.1019607843);
+  position: relative;
+  margin-right: 22px;
+  transition: 0.5s;
+
 }
+#navbar-area .account .container .icon-search{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 20px;
+}
+
 
 #navbar-area .account .fa-search {
-  color: #000000b5 !important;
+  color: #444 !important;
+  cursor: pointer;
 }
 
+.icon-close{
+  position: fixed;
+top: 25px;
+right: 25px;
+height: 50px;
+width: 50px;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: crimson;
+cursor: pointer;
+}
+
+.icon-close i{
+  color: #fff;
+  font-size: 25px;
+}
+
+.box{
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.8 );
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+visibility: hidden;
+transform: 0.5s;
+z-index: 1;
+}
+
+.box.open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-area{
+  width: 100%;
+  max-width: 800px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  display: flex;
+  border-bottom: 1px solid #0c0505;
+
+}
+
+.form-area input{
+  flex: 1 1 auto;
+  background-color: transparent;
+  border: 0;
+  height: 40px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.form-area button{
+  background: crimson;
+  padding: 0 10px;
+  border: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-area input:placeholder{
+color: #fff;
+letter-spacing: 3px ;
+}
 
 #navbar-area .navbar .submenu {
   list-style: none;
@@ -137,6 +236,8 @@
 
 }
 
+
+
 #navbar-area .navbar .submenu a {
   text-decoration: none;
   font-family: Lato;
@@ -148,6 +249,33 @@
 
 #navbar-area .navbar .submenu a:hover {
   color: rgba(120, 106, 170, 0.352);
+}
+
+.account i{
+  transition: 0.5s;
+}
+
+.account i:hover{
+border: 1px solid black !important;
+}
+
+
+.account .dropdown-menu{
+  transform: translateX(-50%);
+  display: none;
+  margin-top: 0%;
+}
+
+.account .dropdown-menu .submenu{
+  z-index: 1;
+}
+.account .user:hover .dropdown-menu{
+  display: block !important; 
+
+}
+
+.account .user{
+  transition: all 0.5s;
 }
 
 
@@ -184,6 +312,7 @@
 .active-image {
   opacity: 1 !important;
 }
+
 
 #slider-area .icons i {
   color: grey;

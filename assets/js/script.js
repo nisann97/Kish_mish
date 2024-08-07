@@ -1,5 +1,6 @@
 "use strict";
 
+
 // SLIDER
 
 let leftIcon = document.querySelector(".slider .icons .left-icon");
@@ -73,12 +74,20 @@ btn[3].onclick = function () {
 }
 
 
+//search
+$('.icon-search, .icon-close').on("click", function(){
+  $('.box').toggleClass("open");
+ 
+})
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
 
 
+//user dropdown
+
+let dropdowns = document.querySelector(".dropdown-menu")
 
 // INSTAGRAM
 
@@ -107,6 +116,5 @@ $(document).ready(function () {
 
 
 });
-
 
 

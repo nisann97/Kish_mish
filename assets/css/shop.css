@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Lato-light;
+    src: url(../fonts/Lato-Light.ttf);
+  }
+  
+  
+  @font-face {
+    font-family: Lato-regular;
+    src: url(../fonts/Lato-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: Marcellus;
+    src: url(../fonts/Marcellus-Regular.ttf);
+  }
+  
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #header-top .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  #header-top .logo img {
+    width: 45%;
+  }
+
+  
+  
