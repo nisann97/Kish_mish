@@ -15,7 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header>
-    <section id="header-top" class="d-none d-sm-block">
+    <section id="header-top">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 col-lg-12 col-sm-12">
@@ -28,8 +28,10 @@
         </div>
     </section>
 
-    <!-- navbar starts -->
-    <section id="navbar-area">
+
+</header>
+<main>
+    <section id="header-sticky" class="d-none d-sm-block">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-light  navbar-expand-xl">
@@ -60,152 +62,348 @@
                         <div class="col-6 col-lg-6 col-sm-6">
                             <div class="account">
                                 <div class="d-flex m-3 me-0">
-                                    <button
-                                        class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
-                                        data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                                            class="fas fa-search text-primary"></i></button>
-                                    <!-- Modal Search Start -->
-                                    <div class="modal fade" id="searchModal" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-fullscreen">
-                                            <div class="modal-content rounded-0">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword
-                                                    </h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body d-flex align-items-center">
-                                                    <form method="get" asp-controller="Shop" asp-action="Index"
-                                                        enctype="multipart/form-data"
-                                                        class="input-group w-75 mx-auto d-flex">
-                                                        <input class="form-control p-3" name="searchText"
-                                                            placeholder="Search">
-                                                        <button type="submit"
-                                                            class="search-btn btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
-                                                            style="top: 0; right: 0%;">Search</button>
-                                                    </form>
-                                                    @* <div class="input-group w-75 mx-auto d-flex">
-                                                        <input type="search" class="form-control p-3"
-                                                            placeholder="Search..." aria-describedby="search-icon-1">
-                                                        <span id="search-icon-1" class="input-group-text p-3"><i
-                                                                class="fa fa-search"></i></span>
-                                                    </div> *@
-                                                </div>
-                                            </div>
+                                    <div class="container">
+                                        <div class="icon-search">
+                                            <i class="fas fa-search text-primary"></i>
                                         </div>
                                     </div>
-                                    <!-- Modal Search End -->
+
                                     <a href="#" class="position-relative me-4 my-auto">
                                         <i class="fa-regular fa-heart"></i>
                                         <span
                                             class="heart position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center px-1"
                                             style="top: -5px; left: 29px; height: 20px; min-width: 20px;">0</span>
                                     </a>
-                                    <a href="#" class="my-auto">
-                                        <i class="fa-regular fa-user"></i>
-                                    </a>
+                                    <div class="user">
+                                        <a href="#" class="my-auto">
+                                            <i class="fa-regular fa-user"></i>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <ul class="submenu">
+                                                <li><a href="">Daxil ol</a></li>
+                                                <li><a href="">Qeydiyyatdan keç</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
                         </div>
 
                     </div>
+
                 </nav>
             </div>
         </div>
         </div>
-    </section>
-    <section id="navbar-mobile" <!-- navbar ends -->
 
-</header>
-<main>
-
-</main>
-<section id="header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-sm-5 col-xl-2">
-                <div class="logo">
-                    <a href="home.html"><img src="./assets/images/kish_mish-logo.png" alt=""></a>
-                </div>
+        <div class="box">
+            <div class="icon-close">
+                <i class="fa fa-times"></i>
             </div>
-            <div class="d-none d-xl-block col-xl-5">
-                <div class="navbar-nav mx-auto">
-                    <a href="home.html" class="nav-item nav-link active">Əsas</a>
-                    <a href="shop.html" class="nav-item nav-link">Haqqımızda</a>
-                    <div class="nav-item products-dropdown">
-                        <a href="#" class="nav-link product-dropdown dropdown-toggle"
-                            data-bs-toggle="dropdown">Məhsullar</a>
-                        <div class="dropdown-menu">
-                            <ul class="submenu">
-                                <li><a href="">Çərəzlər</a></li>
-                                <li><a href="shop.html">Şokoladlar</a></li>
-                                <li><a href="shop.html">Meyvə quruları</a></li>
-                                <li><a href="">Duzlu təamlar</a></li>
-                                <li><a href="shop.html">Kish-Mish qutuları</a></li>
+            <form action="" class="form-area">
+                <input type="text" placeholder="Açar sözü daxil edin">
+                <button>Axtarın</button>
+            </form>
+        </div>
+    </section>
+    <section id="back-to-top-btn">
+        <a id="button">
+            <img src="./assets/images/chevron-up.svg" alt="">
+        </a>
+    </section>
+
+
+    <section id="products-area">
+
+
+     
+
+        <div class="container mt-3">
+            <div class="row row-gap-5">
+                <div class="col-12 col-lg-3">
+                    <div class="col-12">
+                        <h1>Kateqoriyalar</h1>
+                        <div class="filter-btns shadow-md rounded-pill col-auto categories ">
+                            <ul>
+                                <li> <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active"
+                                        data-filter=".project" href="#">Bütün məhsullar</a></li>
+                                <li> <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4"
+                                        data-filter=".business" href="#">Çərəzlər</a></li>
+                                <li>
+
+                                    <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4"
+                                        data-filter=".marketing" href="#">Meyvə quruları</a>
+                                </li>
+                                <li> <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4"
+                                        data-filter=".social" href="#">Duzlu təamlar</a></li>
+                                <li>
+                                    <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4"
+                                        data-filter=".graphic" href="#">Kish-Mish qutular</a>
+                                </li>
                             </ul>
+
+
                         </div>
-
                     </div>
-                    <a href="shop-detail.html" class="nav-item nav-link">Bloq</a>
-
-                    <a href="contact.html" class="nav-item nav-link">Əlaqə</a>
                 </div>
-                <div class="col-6 col-lg-6 col-sm-6">
-                    <div class="account">
-                        <div class="d-flex m-3 me-0">
-                            <button
-                                class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
-                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                                    class="fas fa-search text-primary"></i></button>
-                            <!-- Modal Search Start -->
-                            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-fullscreen">
-                                    <div class="modal-content rounded-0">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body d-flex align-items-center">
-                                            <form method="get" asp-controller="Shop" asp-action="Index"
-                                                enctype="multipart/form-data" class="input-group w-75 mx-auto d-flex">
-                                                <input class="form-control p-3" name="searchText" placeholder="Search">
-                                                <button type="submit"
-                                                    class="search-btn btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
-                                                    style="top: 0; right: 0%;">Search</button>
-                                            </form>
-                                            <div class="input-group w-75 mx-auto d-flex">
-                                                <input type="search" class="form-control p-3" placeholder="Search..."
-                                                    aria-describedby="search-icon-1">
-                                                <span id="search-icon-1" class="input-group-text p-3"><i
-                                                        class="fa fa-search"></i></span>
-                                            </div> *@
+
+                <div class="col-12 col-lg-9">
+                    <div class="row row-gap-5">
+                        <div class="col-12">
+                            <div class="sorting">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="selection">
+                                            <a class="selector">Default Sorting<i class="fa-solid fa-angle-down"></i></a>
+                                            <div class="menu">
+                                                <ul>
+                                                    <li>Default Sorting</li>
+                                                    <li><a href="">Low to High</a></li>
+                                                    <li><a href="">High to Low</a></li>
+                                                    <li><a href="">On Sale</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
+                    
                                 </div>
                             </div>
-                            <!-- Modal Search End -->
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa-regular fa-heart"></i>
-                                <span
-                                    class="heart position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center px-1"
-                                    style="top: -5px; left: 29px; height: 20px; min-width: 20px;">0</span>
-                            </a>
-                            <a href="#" class="my-auto">
-                                <i class="fa-regular fa-user"></i>
-                            </a>
                         </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="popular">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/slider4.png" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="product-action">
+                                        <ul>
+                                            <li>
+                                                <a href="" class="add-to-cart">
+                                                    <img src="./assets/images/add-to-cart.svg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="product-details" data-bs-toggle="modal" data-bs-target="#id1">
+                                                    <img src="./assets/images/quick-view.svg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="add-to-wishlist">
+                                                    <img src="./assets/images/add-to-wishlist.svg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Altın Çilek</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">10,65 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ccol-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="popular">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/Bitter-Sokoladli-Duble-Lokum-scaled.jpg"
+                                            class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Bitter Şokoladlı Duble Lokum</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">9,40 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="winter">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/slider3.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Badamlı Pralin</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">10,20 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="winter">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/ALMA QURUSU DARÇINLI.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Alma Qurusu Darçınlı</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">2,10 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="various">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/Natural-Ananas-Qurusu.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Natural Ananas Qurusu</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">12,50 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="various">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/Franbuazli-Trufel.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Franbuazlı Trufel</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">9,30 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="exotic">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/Findiqli-Trufel.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>Fındıqlı Trufel</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">9,30 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="product-item text-center" data-id="exotic">
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/images/Kvadrat-Taxta-Qutu-1300x1300.jpg" class="img-fluid"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>KVADRAT TAXTA QUTU</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">Add to cart</span>
+                                    <span class="text-black-50">416,00 ₼</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="" class="current">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href=""><i class="fa-solid fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
 
+
+
+
+    </section>
+    <!-- End Our Work -->
+</main>
+
+
+<footer>
+    <section id="footer-area mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-vimeo-v"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Əlaqə</a></li>
+                    <li><a href="#">Haqqımızda</a></li>
+                    <li><a href="#">Məhsullar</a></li>
+                    <li><a href="#">Bloq</a></li>
+                </ul>
+            </div>
+            <div class="row copyright">
+                Copyright © 2021 Kish-Mish - All rights reserved || Powered By: Nisa Narimanova
             </div>
         </div>
+    </section>
+
     </div>
 
-</section>
+</footer>
+
+<script src="https://kit.fontawesome.com/2822221a94.js" crossorigin="anonymous"></script>
+
+<!-- jquery cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- owl-carousel js file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="./assets/js/shop.js"></script>
+</body>
 
 </html>
