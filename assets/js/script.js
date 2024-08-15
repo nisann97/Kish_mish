@@ -57,6 +57,7 @@ $(".close").click(function (e) {
 //#endregion
 
 
+
 var btn = document.getElementsByClassName("btn");
 var slide = document.getElementById("slide-row");
 
@@ -75,8 +76,10 @@ btn[3].onclick = function () {
 
 
 //search
+
+var searchBox = $(".box");
 $('.icon-search, .icon-close').on("click", function(){
-  $('.box').toggleClass("open");
+ searchBox.toggleClass("open");
  
 })
 
@@ -85,6 +88,25 @@ $(document).ready(function () {
 });
 
 
+//endregion
+
+     //#region back-to-top-button
+     var btn = $("#button");
+
+     $(window).scroll(function () {
+       if ($(window).scrollTop() > 300) {
+         btn.addClass("show");
+       } else {
+         btn.removeClass("show");
+       }
+     });
+   
+     btn.on("click", function (e) {
+       e.preventDefault();
+       $("html, body").animate({ scrollTop: 0 }, "300");
+     });
+   
+     //#endregion
 //user dropdown
 
 let dropdowns = document.querySelector(".dropdown-menu")

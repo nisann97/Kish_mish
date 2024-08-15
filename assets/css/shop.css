@@ -88,7 +88,7 @@
   border-bottom: 1px solid rgba(1, 15, 28, 0.1);
   position: sticky;
   top: 0;
-  z-index: 100;}
+  z-index: 2;}
 
 #header-sticky .navbar-nav a {
   font-family: Raleway;
@@ -200,10 +200,47 @@ z-index: 1;
 .box.open{
   opacity: 1;
   visibility: visible;
+
 }
 
 
+.form-area{
+  width: 100%;
+  max-width: 800px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  display: flex;
+  border-bottom: 1px solid #0c0505;
 
+}
+
+.form-area input{
+  flex: 1 1 auto;
+  background-color: transparent;
+  border: 0;
+  height: 40px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.form-area button{
+  background: crimson;
+  padding: 0 10px;
+  border: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-area input:placeholder{
+color: #fff;
+letter-spacing: 3px ;
+}
 
 #header-sticky .navbar .submenu {
   list-style: none;
@@ -289,6 +326,20 @@ border: 1px solid black !important;
 }
 
 
+.sorting .selection .menu{
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 250px;
+}
+
+.sorting .selection:hover .menu{
+  display: block !important; 
+  
+
+}
+
 #products-area .sorting .container{
   display: flex;
   justify-content: end;
@@ -296,13 +347,11 @@ border: 1px solid black !important;
 
  .selection {
   background-color: #f9f9f9;
-  border: 1px solid rgba(1, 15, 28, 0.1);
-  width: 170px;
+  width: 120px;
   cursor: pointer;
   padding: 0 25px;
-  line-height: 38px;
   position: relative;
-
+  font-family: Lato-regular;
   
 }
  .selection a {
@@ -312,26 +361,16 @@ border: 1px solid black !important;
   font-size: 14px;
   text-decoration: none;
   color: #010F1C;
+  font-family: Raleway;
 }
  .selection a i {
   transition: 0.1s;
   margin-left: 10px;
   margin-top: 2px;
 }
- .selection a .rotate {
-  transform: rotate(180deg);
-}
- .selection .menu {
-  left: 0;
-  width: 100%;
-  transition: all 0.5s;
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
+
  .selection .menu ul {
   border-radius: 5px;
-  line-height: 40px;
   display: flex;
   padding: 0;
   margin: 0;
@@ -354,11 +393,9 @@ border: 1px solid black !important;
   transition: 0.5s;
 }
  .selection .menu ul li a:hover {
-  color: #0989FF;
+  color: rgb(159, 101, 101);
 }
- .selection .menu ul li:nth-child(1) {
-  font-weight: 600;
-}
+
  .selection .menu-down {
   animation: drop-down 0.3s;
   opacity: 1;
@@ -380,7 +417,7 @@ border: 1px solid black !important;
   font-family: Lato-regular;
   font-weight: 400;
   color:#000000b5;
-
+  text-align: center;
 }
 
 #products-area .categories{
