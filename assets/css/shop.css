@@ -32,42 +32,6 @@
   box-sizing: border-box;
 }
 
-
-#button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(159, 101, 101);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  box-shadow: 0 8px 16px rgb(159, 101, 101);
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: 0.3s 0s ease-out;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #8e1818;
-  transform: translateY(-4px);
-}
-#button:active {
-  background-color: #555;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
 #header-top .logo {
   height: 50px;
   display: flex;
@@ -81,20 +45,11 @@
 
 }
 
-#header-sticky {
-  height: 70px;
-  background-color: white;
-  font-family: Jost;
-  border-bottom: 1px solid rgba(1, 15, 28, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 2;}
-
-#header-sticky .navbar-nav a {
+#navbar-area .navbar-nav a {
   font-family: Raleway;
 }
 
-#header-sticky .account {
+#navbar-area .account {
   width: 100%;
   height: 100%;
   display: flex;
@@ -102,7 +57,7 @@
   justify-content: end;
 }
 
-#header-sticky .account .fa-user {
+#navbar-area .account .fa-user {
   width: 44px;
   height: 44px;
   border: 2px solid rgba(13, 1, 38, 0.102);
@@ -116,7 +71,7 @@
 
 
 
-#header-sticky .account .fa-heart {
+#navbar-area .account .fa-heart {
   width: 44px;
   height: 44px;
   border: 2px solid rgba(1, 15, 28, 0.1019607843);
@@ -126,13 +81,13 @@
   color: #000000b5;
 }
 
-#header-sticky .account .heart {
+#navbar-area .account .heart {
   background-color: rgb(125 108 111 / 35%) !important;
   color: #000000b5;
   text-decoration: none;
 }
 
-#header-sticky .account .container{
+#navbar-area .account .container{
   width: 44px;
   height: 44px;
   background-color: white;
@@ -142,7 +97,7 @@
   transition: 0.5s;
 
 }
-#header-sticky .account .container .icon-search{
+#navbar-area .account .container .icon-search{
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -150,7 +105,7 @@
 }
 
 
-#header-sticky .account .fa-search {
+#navbar-area .account .fa-search {
   color: #444 !important;
   cursor: pointer;
 }
@@ -200,9 +155,7 @@ z-index: 1;
 .box.open{
   opacity: 1;
   visibility: visible;
-
 }
-
 
 .form-area{
   width: 100%;
@@ -242,12 +195,12 @@ color: #fff;
 letter-spacing: 3px ;
 }
 
-#header-sticky .navbar .submenu {
+#navbar-area .navbar .submenu {
   list-style: none;
 }
 
 
-#header-sticky .navbar .nav-link {
+#navbar-area .navbar .nav-link {
 
   cursor: pointer;
   height: 40px;
@@ -258,7 +211,7 @@ letter-spacing: 3px ;
 
 
 @media (min-width: 1200px) {
-  #header-sticky .dropdown-menu {
+  #navbar-area .dropdown-menu {
     display: none;
     position: absolute;
     background-color: #f9f9f9e0;
@@ -268,24 +221,24 @@ letter-spacing: 3px ;
 
   }
 
-  #header-sticky .products-dropdown:hover .dropdown-menu {
+  #navbar-area .products-dropdown:hover .dropdown-menu {
     display: block;
   }
 
 
-
-
 }
 
 
-#header-sticky .navbar .nav-link:hover {
+#navbar-area .navbar .nav-link:hover {
   border: 2px solid grey;
 
+
+
 }
 
 
 
-#header-sticky .navbar .submenu a {
+#navbar-area .navbar .submenu a {
   text-decoration: none;
   font-family: Lato;
   color: rgb(73, 73, 73);
@@ -294,7 +247,7 @@ letter-spacing: 3px ;
   transition: 0.5s;
 }
 
-#header-sticky .navbar .submenu a:hover {
+#navbar-area .navbar .submenu a:hover {
   color: rgba(120, 106, 170, 0.352);
 }
 
@@ -324,6 +277,7 @@ border: 1px solid black !important;
 .account .user{
   transition: all 0.5s;
 }
+
 
 
 .sorting .selection .menu{
